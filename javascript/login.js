@@ -9,7 +9,7 @@ submitBtn.addEventListener('click', ()=> {
             //Put all code that relies on the data from this request in here.
             if(response.status == 200){
               user_id= response.data.id; //The username that was requested. In this case it is "myUserName".
-              document.location.href  = `page/home.html?userId=${user_id}`;
+              document.location.href  = `/page/home.html?userId=${user_id}`;
             }
             else{
               //User "myUserName" not found.
